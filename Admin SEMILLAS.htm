@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin SEMILLAS</title>
+    <link href="/bootstrap.css" rel="stylesheet">
+    <link href="/font-awesome.css" rel="stylesheet">
+    <link href="/estilo_dashboard.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet" type="text/css">
+    <link href="/components.css" rel="stylesheet" type="text/css">
+    <link href="/colors.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <script src="/jquery-2.js"></script>        
+    <!-- Bootstrap Js -->
+    <script src="/bootstrap.js"></script>
+
+    <script type="text/javascript" src="/interactions.js"></script>
+    <script type="text/javascript" src="/select2.js"></script>
+    <script type="text/javascript" src="/form_select2.js"></script>
+    <script type="text/javascript" src="/datatables.js"></script>
+    <script type="text/javascript" src="/fixed_columns.js"></script>
+    <script type="text/javascript" src="/datatables_extension_fixed_columns.js"></script>
+    <script type="text/javascript" src="/jquery-ui-1.js"></script>
+    
+    <!-- Metis Menu Js -->
+    
+            <!-- Custom Js -->
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://semillasbuck.necolabs.com/index.php">SEMILLAS</a>
+            </div>
+
+          
+        </nav>
+        <!--/. NAV TOP  -->
+        <script src="/jquery.js"></script>
+<script src="/menu.js"></script>
+
+
+
+
+
+
+
+<nav class="navbar-default navbar-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="main-menu">
+            <li><a href="#"><i class="fa fa-sitemap"></i>Usuarios<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/usuarios&amp;opcion=users&amp;action">Usuarios</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/usuarios&amp;opcion=roles&amp;action">Roles</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/usuarios&amp;opcion=perms&amp;action">Permisos</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-sitemap"></i>Parametros<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=globales&amp;clase=Variable">Variables</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=localidades&amp;clase=Subregion">Subregion</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=localidades&amp;clase=Localidad">Localidades</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=TipoSiembraCosecha">Tipo Siembra Cosecha</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=EnsayoTipo">Tipo Ensayo</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=CruzaTipo">Tipo Cruza</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=ParticipanteCategoria">Categoria Participante</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Marcador">Marcadores</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Especie">Especie</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=PV">PV</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ciclo">Ciclo</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=ParticipantePrograma">Programas</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/importar&amp;opcion=importar_csv">Cargar desde excel participantes</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-sitemap"></i>Cruzas<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=cruzas&amp;clase=Cruza">Lista Cruzas</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/cruzas&amp;opcion=borrar_cruzas">Borrar Cruzas</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/cruzas&amp;opcion=fitro1_cruza">Generar Cruzas</a></li>
+                    <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/cruzas&amp;opcion=importar_cruza">Importar Cruzas</a></li>
+                    </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-sitemap"></i>Ensayos<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Participante">Participante</a></li>
+                        <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ensayo">Ensayo</a></li>
+                        <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Parcela">Parcela</a></li>
+                        <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/ensayos&amp;opcion=importar_parcelas">Cargar resultados Parcelas</a></li>
+                        <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/ensayos&amp;opcion=importar_participantes">Importar participantes 2017</a></li>
+                        <li><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=install&amp;opcion=carga2016">carga 2016</a></li>
+                        
+
+                    </ul>
+                
+            </li>
+            <li><a href="http://semillasbuck.necolabs.com/logout.php"><i class="fa fa-sitemap"></i>Salir<span class="fa arrow"></span></a></li>
+        </ul>
+    </div>
+</nav>
+   
+
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+         <div id="page-inner">
+
+
+
+<style>
+.boxtodo {
+	display: flex;
+    flex-direction: row;
+    flex:1;
+}
+.box1 {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    
+    }
+.box2 {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+
+    }
+
+.columA {
+	width: 33%;
+	float:left;
+
+}
+ .A,.B,.C,.D {
+  	width: 80%;
+  	height: 100%;
+  }
+   
+ .columA p {
+ 	line-height: 5px;
+ }   
+
+</style>
+
+
+
+
+<div id="fondologin">
+<div class="boxtodo">
+
+<div class="box1">
+  <div class="panel panel-primary panelprincipal A">
+  	<div class="panel-heading">
+      <a style="color:white" href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ensayo"><i class="icon-folder-search">&nbsp;ENSAYOS</i></a>
+    </div>
+    <div class="columA">
+    	<p align="center"><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ensayo&amp;tipoEnsayo=1">ECR</a></p>
+		<p align="center"><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ensayo&amp;tipoEnsayo=2">Multiplicación</a></p>
+		<p align="center">	<a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ensayo&amp;tipoEnsayo=5">Colección</a></p>
+		<p align="center">	<a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ensayo&amp;tipoEnsayo=3">Fenológico</a></p>
+		<p align="center">	<a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ensayo&amp;tipoEnsayo=4">Demo</a></p>
+    </div>
+    <div class="columA">
+    	    <p align="center"><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=cruzas&amp;clase=Cruza">Cruza</a></p>
+			<p align="center"><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Ensayo&amp;tipoEnsayo=6">Filial</a></p> 
+    </div>
+    <div class="columA">
+    	<p align="center"><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=ParticipanteLista">Lista</a></p>
+    </div>
+
+                        <!-- <div class="panel-footer">
+                          
+                        </div> -->
+  </div>
+
+
+
+  <div class="panel panel-primary panelprincipal B">
+  	 <div class="panel-heading">
+      DATOS
+                        </div>
+	<div class="columA">
+		<p align="center"><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/ensayos&amp;opcion=cargar_parcelas">Cargar</a></p>
+        <p align="center">        <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=./&amp;opcion=datosOne/abm_datos&amp;modulo=ensayos&amp;clase=Parcela">Editar</a></p>
+	</div>                        
+	<div class="columA">
+		<p align="center">               
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/ensayos&amp;opcion=importar_parcelas_opcion2">DataLink</a></p> 
+            <p align="center"><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/ensayos&amp;opcion=importar_parcelas_opcion1">Alveógrafo</a></p>
+            <p align="center"><a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/ensayos&amp;opcion=importar_parcelas_opcion3">Infratec</a></p>
+	</div>                        
+	<div class="columA">
+	</div>                        
+                        <div class="panel-footer">
+                           
+                        </div>
+  </div>
+
+
+</div>
+
+
+
+<div class="box2">
+
+  <div class="panel panel-primary panelprincipal C">
+  	<div class="panel-heading">
+      IMPRIMIR
+                        </div>
+    <div class="columA">
+	<p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Siembra</a>
+                </p>   
+                <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Estadisticas</a>
+                </p>   
+                <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Inase</a>
+                </p>   
+	</div>                        
+    <div class="columA">
+    <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Participantes</a>
+                </p>   
+                <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Planos</a>
+                </p>   
+                <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Etiquetas</a>
+                </p>   
+	</div>                        
+    <div class="columA">
+    <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Exportar</a>
+                </p>   
+                
+	</div>                        		                        
+            
+                        <div class="panel-footer">
+                           
+                        </div>
+  </div>
+
+
+
+
+
+  <div class="panel panel-primary panelprincipal D">
+  	 <div class="panel-heading">
+      CONSULTAS
+                        </div>
+                        <div class="columA">
+  <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Variedades</a>
+                </p>   
+                <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Ensayos</a>
+                </p>   
+                
+  </div>        
+          <div class="columA">
+  <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Stock</a>
+                </p>   
+                
+  </div>        
+          <div class="columA">
+  <p align="center">
+                <a href="http://semillasbuck.necolabs.com/dashboard.php?solapa=modulos/imprimir&amp;opcion=imprimir_etiquetas">Gráficos</a>
+                </p>   
+                
+  </div>                        
+                    
+                        <div class="panel-footer">
+                           
+                        </div>
+  </div>
+
+
+
+</div>
+
+
+</div>
+</div>
+
+        </div></div>
+    </div>
+    <!-- /. WRAPPER  -->
+   
+    
+
+
+
+</body></html>
